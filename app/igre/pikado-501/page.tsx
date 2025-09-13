@@ -1,73 +1,69 @@
 import React from "react";
 
 export const metadata = {
-  title: "Pikado 501 – Pravila | Pravila Igara",
-  description: "Quick-start, Full i Pro/turnirska pravila za Pikado 501.",
+  title: "Darts 501 – Rules | The Ruler",
+  description: "Quick-start, Full and Pro/Tournament rules for Darts 501.",
 };
 
-export default function Pikado501Page() {
+export default function Darts501Page() {
   return (
     <main className="mx-auto max-w-screen-md p-6 space-y-8">
       <header>
-        <h1 className="text-3xl font-bold">Pikado 501 – Pravila</h1>
-        <p className="text-sm text-gray-600">
-          Kategorija: Bar igre · Igrači: 2+ · Težina: ★★☆
-        </p>
+        <h1 className="text-3xl font-bold">Darts 501 — Rules</h1>
+        <p className="text-sm text-gray-600">Category: Bar games · Players: 2+ · Difficulty: ★★☆</p>
       </header>
 
       <section>
         <h2 className="text-2xl font-semibold">Quick-start (2 min)</h2>
         <ol className="list-decimal ml-6 space-y-1">
-          <li>Cilj: spustiti 501 na točno 0 (standard: <b>double-out</b>).</li>
-          <li>Svaki potez: <b>3 strelice</b>. Zbraja se singl (x1), double (x2), triple (x3), bull 25/50.</li>
-          <li>Oduzimanje: trenutačni rezultat − osvojeni bodovi poteza.</li>
-          <li><b>Bust</b>: pređeš 0 ili ostaneš na 1 → cijeli potez se poništava, vraća se rezultat s početka poteza.</li>
-          <li>Checkout: zadnji pogodak mora biti dvostruko polje (ili bull-double 50).</li>
+          <li>Goal: reduce from <b>501</b> to <b>0</b> exactly (standard: <b>double-out</b>).</li>
+          <li>Turn: <b>3 darts</b>. Scores: single (×1), double (×2), triple (×3), bull 25/50.</li>
+          <li>Subtract your turn score from your current total.</li>
+          <li><b>Bust:</b> if you go below 0 or end on 1 (in DO), the whole turn is void and your score reverts.</li>
+          <li>Checkout must be a <b>double</b> (or inner bull 50).</li>
         </ol>
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold">Full pravila</h2>
+        <h2 className="text-2xl font-semibold">Full rules</h2>
         <ul className="list-disc ml-6 space-y-1">
-          <li><b>Početak:</b> tko započinje odlučuje bacanje najbliže bullu ili dogovor; igrači se izmjenjuju potez po potez.</li>
-          <li><b>Vrijednosti polja:</b> singl = nominalna vrijednost; dvostruko = x2; trostruko = x3; bull 25 (vanjski) / 50 (središnji).</li>
-          <li><b>Validacija:</b> strelica vrijedi ako ostane u ploči ili je sudac jasno utvrdio pogodak; dodir mrežice/odbijanje ne vrijedi.</li>
-          <li><b>Linija bacanja (oche):</b> stopalo ne smije prijeći liniju; prekršaj poništava pogodak.</li>
-          <li><b>Bust detaljno:</b> svako stanje &lt;0 ili =1 kod double-out poništava <i>cijeli potez</i>; rezultat se vraća na vrijednost prije tri strelice.</li>
-          <li><b>Checkout:</b> završava se dvostrukim poljem; pogodak koji pređe 0 ne vrijedi.</li>
-          <li><b>Rezultat:</b> vode ga igrači ili zapisničar; preporučeno je verificirati nakon svakog poteza.</li>
+          <li><b>Start order:</b> closest to bull or by agreement; players alternate turns.</li>
+          <li><b>Scoring validity:</b> a dart that stays in the board counts; bounce-outs do not.</li>
+          <li><b>Oche:</b> no foot may cross the throw line; foot-fault invalidates that dart.</li>
+          <li><b>Bust details:</b> any total &lt;0 or =1 (in double-out) voids the entire turn and restores the pre-turn score.</li>
+          <li><b>Checkout:</b> last dart must land in a double; exceeding 0 does not count.</li>
+          <li><b>Scorekeeping:</b> players or a scorer record after each turn; confirm frequently to avoid disputes.</li>
         </ul>
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold">Pro / Turnirska pravila (sažetak)</h2>
+        <h2 className="text-2xl font-semibold">Pro / Tournament rules (summary)</h2>
         <ul className="list-disc ml-6 space-y-1">
-          <li><b>Format meča:</b> legs i setovi (npr. best-of-5 legs; set dobiva prvi do x legova).</li>
-          <li><b>Varijante:</b> standard <b>SI/DO</b> (single-in/double-out); ponekad <b>DI/DO</b> (double-in/double-out).</li>
-          <li><b>Redoslijed početka:</b> može se rotirati po legovima ili po setovima; odlučuje pravilo turnira.</li>
-          <li><b>Foot-fault:</b> prelazak linije = pogodak nevažeći; ponovnog bacanja nema.</li>
-          <li><b>Administracija:</b> zapisničar vodi službene rezultate; spor rješava sudac.</li>
+          <li><b>Match format:</b> legs and sets (e.g., best-of-5 legs).</li>
+          <li><b>Variants:</b> standard <b>SI/DO</b> (single-in/double-out); sometimes <b>DI/DO</b> (double-in/double-out).</li>
+          <li><b>Throw order:</b> rotates by leg or set per tournament rules.</li>
+          <li><b>Administration:</b> official scorer; referee resolves disputes.</li>
         </ul>
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold">Najčešće greške</h2>
+        <h2 className="text-2xl font-semibold">Common mistakes</h2>
         <ul className="list-disc ml-6 space-y-1">
-          <li>Bust pa krivo postavljen rezultat za sljedeći potez.</li>
-          <li>Checkout bez double-out (računanje do 0 singlom).</li>
-          <li>Prelazak linije bacanja (foot-fault).</li>
+          <li>Bust and then using the wrong starting total next turn.</li>
+          <li>Trying to finish without a double (invalid checkout).</li>
+          <li>Foot over the oche.</li>
         </ul>
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold">Citati izvora (dodaj linkove kasnije)</h2>
+        <h2 className="text-2xl font-semibold">Sources (to add)</h2>
         <ul className="list-disc ml-6 space-y-1">
-          <li>Svjetska federacija pikada – službeni pravilnik (WDF Rulebook).</li>
-          <li>Primjeri turnirskih formata – nacionalne federacije / ligaški pravilnici.</li>
-          <li>Smjernice za zapis rezultata i “bust” situacije – edukativni priručnici klubova.</li>
+          <li>WDF Rulebook (official darts rules).</li>
+          <li>National federation tournament formats.</li>
+          <li>Club guides on bust and scoring procedures.</li>
         </ul>
         <p className="text-sm text-gray-600">
-          Napomena: Ova aplikacija daje sažetak; za natjecanja obavezno provjeriti službene pravilnike organizatora.
+          Note: This is a summary. For competitions, always verify with the organiser’s official rulebook.
         </p>
       </section>
     </main>
