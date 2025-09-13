@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = { title: "Bar Games — Rules | The Ruler" };
 
 export default function BarGames() {
@@ -11,7 +13,9 @@ export default function BarGames() {
       <h1 className="text-3xl font-bold">Bar Games</h1>
       <ul className="list-disc ml-6 space-y-2">
         {items.map(i => (
-          <li key={i.href}><a className="underline" href={i.href}>{i.title}</a></li>
+          <li key={i.href}>
+            <Link href={i.href} className="underline">{i.title}</Link>
+          </li>
         ))}
       </ul>
     </main>
