@@ -4,6 +4,15 @@ export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+<section className="space-y-2">
+  <h2 className="text-xl font-semibold">Bar igre</h2>
+  <ul className="list-disc ml-6">
+    <li><a className="underline" href="/igre/pikado-501">Pikado 501</a></li>
+    <li><a className="underline" href="/igre/biljar-8-ball">Biljar 8-ball</a></li>
+    <li><a className="underline" href="/igre/stolni-nogomet">Stolni nogomet</a></li>
+  </ul>
+</section>
+
        <a href="/igre/pikado-501" className="underline text-blue-600">
     ➡️ Pravila za Pikado 501
   </a>
